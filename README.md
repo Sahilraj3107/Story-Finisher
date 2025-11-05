@@ -189,9 +189,6 @@ pipreqs . --force --ignore .venv
 
 Feel free to submit issues and pull requests!
 
-## License
-
-MIT License
 
 ## Acknowledgments
 
