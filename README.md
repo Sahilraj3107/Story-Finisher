@@ -76,18 +76,18 @@ GROQ_API_KEY=your_groq_api_key_here
 ## Project Structure
 ```
 Story-Finisher/
-│
-├── config/
-│   ├── agents.yml          # Agent configurations
-│   └── tasks.yml           # Task definitions
-│
-├── output/                 # Generated stories saved here
-│
-├── crew.py                 # CrewAI setup
-├── main.py                 # Main execution file
-├── .env                    # Environment variables (create this)
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
+├── .env
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── .venv/
+└── src/
+    └── story_finisher/
+        ├── main.py
+        ├── crew.py
+        └── config/
+            ├── agents.yaml
+            └── tasks.yaml
 ```
 
 ## Configuration Files
