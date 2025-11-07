@@ -1,0 +1,26 @@
+apiVersion : apps/v1
+kind : Deployment
+metadata:
+  name : story-finisher-Deployment
+  labels:
+    app: story-finisher-agent
+
+specs:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: story-finisher
+
+  template:
+    metadata:
+      labels:
+        app: story-finisher
+
+    specs:
+      containers:
+        - name: story-finisher-containers
+          image: sahil3107/story-finisher:latest
+          ports:
+          - containersPort: 8000
+                    
