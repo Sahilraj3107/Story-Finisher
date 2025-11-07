@@ -1,0 +1,10 @@
+services:
+  story-finisher:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: story-finisher-app
+    env_file:          
+      - .env            
+    volumes:
+      - ./src:/app/src

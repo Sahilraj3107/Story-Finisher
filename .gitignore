@@ -1,5 +1,47 @@
+# Environment variables (SENSITIVE - never commit!)
 .env
-.venv
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Python packages
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Output/generated files
 output/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Linting/formatting
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# for now
+.github/workflows/ci.yml
