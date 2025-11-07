@@ -31,4 +31,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/story-finisher:latest      
+          tags: ${{ secrets.DOCKER_USERNAME }}/story-finisher:latest
