@@ -1,6 +1,6 @@
-Name: Story-Finisher
+name: Story-Finisher
 
-ON:
+on:
   push:
     branches:
       - main
@@ -29,6 +29,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./dockerfile
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/story-finisher:latest      

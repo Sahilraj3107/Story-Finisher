@@ -4,7 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: story-finisher-app
-    env_file:          
-      - .env            
+    enviroment:
+      - GROQ_API_KEY=${GROQ_API_KEY}            
     volumes:
       - ./src:/app/src
+    restart: unless-stopped  
