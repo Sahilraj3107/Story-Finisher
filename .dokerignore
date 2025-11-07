@@ -18,7 +18,3 @@ output/
 htmlcov/
 .mypy_cache/
 .ruff_cache/
-README.md
-Dockerfile
-compose.yml
-.dockerignore
